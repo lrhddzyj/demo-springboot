@@ -43,7 +43,9 @@ public class SpringCacheDemoApplication implements ApplicationRunner {
             teaServicie.findAll();
         }
 
-        teaServicie.reloadTea();
+       // teaServicie.reloadTea();
+
+        Thread.sleep(5001);
 
         teaServicie.findAll();
 

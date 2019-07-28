@@ -5,7 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.Type;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.joda.money.Money;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -26,13 +28,14 @@ public class Tea implements Serializable {
     @Column(length = 64)
     private String name;
 
-    @Column(length = 8)
-    private Integer weight;
-
     @CreationTimestamp
     private Date createTime;
 
     @UpdateTimestamp
     private Date updateTime;
 
+    @Type(type = "org.jadira.usertype.moneyandcurrency.joda.PersistentMoneyAmount",parameters = {
+            @org.hibernate.annotations.Parameter(name = "currencyCode",value = "CNY")
+    })
+    private Money price;
 }
