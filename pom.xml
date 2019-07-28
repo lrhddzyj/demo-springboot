@@ -24,6 +24,7 @@
         <module>mybatis-generator-demo</module>
         <module>mongo-demo</module>
         <module>jedis-pool-demo</module>
+        <module>spring-cache-demo</module>
     </modules>
 
 </project>
