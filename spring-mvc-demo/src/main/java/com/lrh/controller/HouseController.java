@@ -28,12 +28,12 @@ public class HouseController {
         return  houseService.saveHouse(house);
     }
 
-    @GetMapping("/all")
+    @GetMapping(value = "/all",params = "!name")
     public List<House> findAll(){
         return houseService.findAll();
     }
 
-    @GetMapping(value = "/some")
+    @GetMapping(value = "/all",params = "name")
     public List<House> findSome(@RequestParam String name){
         return houseService.findAll(name);
     }
