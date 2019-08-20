@@ -1,11 +1,13 @@
 package com.lrh.controller;
 
+import com.lrh.controller.exception.ValidateException;
 import com.lrh.controller.request.NewHouseRequest;
 import com.lrh.entity.House;
 import com.lrh.service.HouseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -47,7 +49,11 @@ public class HouseController {
     }
 
     @GetMapping(value = "/house/create")
-    public String createHouse(@Valid NewHouseRequest houseRequest){
+    public String createHouse(@Valid NewHouseRequest houseRequest, BindingResult bindingResult) throws InterruptedException {
+        if(bindingResult.hasErrors()){
+            throw new ValidateException(bindingResult);
+        }
+        Thread.sleep(200);
         return "建造成功";
     }
 }
