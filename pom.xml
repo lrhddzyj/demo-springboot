@@ -25,6 +25,7 @@
         <module>mongo-demo</module>
         <module>jedis-pool-demo</module>
         <module>spring-cache-demo</module>
+        <module>rest-remplate-demo</module>
     </modules>
 
 </project>

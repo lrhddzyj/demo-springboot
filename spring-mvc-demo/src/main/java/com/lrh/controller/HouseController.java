@@ -4,6 +4,7 @@ import com.lrh.controller.exception.ValidateException;
 import com.lrh.controller.request.NewHouseRequest;
 import com.lrh.entity.House;
 import com.lrh.service.HouseService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,6 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@Slf4j
 public class HouseController {
 
     @Autowired
@@ -43,8 +45,9 @@ public class HouseController {
     @PostMapping(value = "/all",params = "name",
             consumes ={ MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE})
-    @ResponseStatus()
+    @ResponseStatus(HttpStatus.OK)
     public String findSomeBody(@RequestParam String name){
+        log.info("name ={}", name);
         return "{\"name\":" + name + "}";
     }
 
