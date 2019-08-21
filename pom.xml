@@ -26,6 +26,7 @@
         <module>jedis-pool-demo</module>
         <module>spring-cache-demo</module>
         <module>rest-remplate-demo</module>
+        <module>distributed-session-demo</module>
     </modules>
 
 </project>
