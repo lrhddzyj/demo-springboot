@@ -10,7 +10,8 @@ import org.apache.http.protocol.HttpContext;
 import java.util.Arrays;
 
 /**
- * 自定义的连接的keepAlive策略
+ * 连接复用
+ * keepAlive策略
  */
 public class CustomerConnectionKeepAliveStrategy implements ConnectionKeepAliveStrategy {
 
