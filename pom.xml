@@ -27,6 +27,11 @@
         <module>spring-cache-demo</module>
         <module>rest-remplate-demo</module>
         <module>distributed-session-demo</module>
+        <module>redis-lettuce-repository-demo</module>
+        <module>spring-mvc-demo</module>
+        <module>geeking-runner</module>
+        <module>geeking-runner-autoconfig-demo</module>
+        <module>geeking-runner-autoconfig-test-demo</module>
     </modules>
 
 </project>

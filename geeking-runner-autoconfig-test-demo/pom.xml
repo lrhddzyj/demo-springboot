@@ -26,15 +26,21 @@
 
         <dependency>
             <groupId>com.lrh</groupId>
-            <artifactId>geeking-runner-autoconfig-demo</artifactId>
+            <artifactId>geeking-runner-spring-boot-starter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.lrh</groupId>
-            <artifactId>geeking-runner</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.lrh</groupId>-->
+<!--            <artifactId>geeking-runner-autoconfig-demo</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.lrh</groupId>-->
+<!--            <artifactId>geeking-runner</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.projectlombok</groupId>
