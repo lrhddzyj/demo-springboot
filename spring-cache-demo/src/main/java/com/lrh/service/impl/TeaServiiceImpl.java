@@ -22,7 +22,7 @@ public class TeaServiiceImpl implements TeaServicie {
     private TeaRepository teaRepository;
 
     @Override
-    @Cacheable
+    @Cacheable()
     public List<Tea> findAll() {
         return teaRepository.findAll();
     }

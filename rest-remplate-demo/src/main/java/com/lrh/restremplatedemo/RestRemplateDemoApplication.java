@@ -96,6 +96,8 @@ public class RestRemplateDemoApplication implements ApplicationRunner {
 				.setReadTimeout(Duration.ofMillis(500))
 				.requestFactory(this::httpRequestFactory)
 				.build();
+
+
 	}
 
 

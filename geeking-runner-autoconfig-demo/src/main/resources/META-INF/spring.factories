@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.lrh.GeekingRunnerAutoconfig
+  com.lrh.GeekingRunnerAutoconfig,\
+  com.lrh.GeekingServiceAutoconfiguration

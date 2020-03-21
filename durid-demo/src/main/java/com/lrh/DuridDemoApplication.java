@@ -22,6 +22,6 @@ public class DuridDemoApplication implements CommandLineRunner {
 //        new TestVo().builder()
         TestVo testVo = TestVo.builder().fieldOne("a").fieldTwo("b").build();
 
-        jdbcTemplate.execute("select   from dual");
+        jdbcTemplate.execute("select  * from dual");
     }
 }
