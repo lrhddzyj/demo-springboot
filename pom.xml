@@ -32,6 +32,7 @@
         <module>geeking-runner</module>
         <module>geeking-runner-autoconfig-demo</module>
         <module>geeking-runner-autoconfig-test-demo</module>
+        <module>actuator-demo</module>
     </modules>
 
 </project>
